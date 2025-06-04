@@ -38,15 +38,15 @@ function Button({
   className,
   variant,
   size,
-  isLink = false,
   ...props
-}: (React.ComponentProps<"button"> | React.ComponentProps<"a">) &
+}: (React.ComponentProps<"button"> | (React.ComponentProps<"a"> & VariantProps<typeof buttonVariants> & {
+  isLink?: boolean
+})) &
   VariantProps<typeof buttonVariants> & {
-    asChild?: boolean,
-    isLink?: boolean
+    asChild?: boolean
   }) {
 
-  if(isLink === true) {
+  if("isLink" in props && props.isLink === true) {
     return (
       <a
         data-slot="a"
@@ -60,7 +60,7 @@ function Button({
     <button
       data-slot="button"
       className={cn(buttonVariants({ variant, size, className }), 'cursor-pointer')}
-      {...props}
+      {...(props as React.ComponentProps<"button">)}
     />
   )
 }
