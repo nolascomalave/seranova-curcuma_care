@@ -91,7 +91,7 @@ export default function Page() {
   const [isDarkMode, setIsDarkMode] = useState(false);
   const [isPaused, setIsPaused] = useState(false);
   const [volume, setVolume] = useState(0);
-  const videoRef = useRef(null);
+  const videoRef = useRef<HTMLVideoElement>(null);
 
   // Load theme from localStorage on mount
   useEffect(() => {
@@ -132,10 +132,12 @@ export default function Page() {
   }
 
   const playPayseVideo = () => {
-    const paused = isPaused === true;
+    if(videoRef.current) {
+      const paused = isPaused === true;
 
-    setIsPaused(!paused);
-    videoRef.current[paused ? "play" : "pause"]();
+      setIsPaused(!paused);
+      videoRef.current[paused ? "play" : "pause"]();
+    }
   }
 
   /* useEffect(() => {
@@ -309,6 +311,9 @@ export default function Page() {
                   <button
                     className="rounded-full bg-black/50 cursor-pointer p-2"
                     onClick={() => {
+                      if(!videoRef.current) {
+                        return;
+                      }
                       let newVolume = 0;
 
                       switch(volume) {
