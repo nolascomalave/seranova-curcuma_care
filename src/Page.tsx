@@ -86,6 +86,16 @@ const faqs = [
   },
 ];
 
+const menuItems = [
+  { id: "inicio", label: "Inicio", icon: <Home className="w-5 h-5" /> },
+  { id: "beneficios", label: "Beneficios", icon: <Sparkles className="w-5 h-5" /> },
+  { id: "ingredientes", label: "Ingredientes", icon: <Component className="w-5 h-5" /> },
+  { id: "comprar", label: "Comprar", icon: <ShoppingCart className="w-5 h-5" /> },
+  { id: "galeria", label: "Galería", icon: <Camera className="w-5 h-5" /> },
+  { id: "testimonios", label: "Testimonios", icon: <MessageCircle className="w-5 h-5" /> },
+  { id: "faq", label: "FAQ", icon: <HelpCircle className="w-5 h-5" /> },
+];
+
 export default function Page() {
   const [openFaq, setOpenFaq] = useState<number | null>(null);
   const [isDarkMode, setIsDarkMode] = useState(false);
@@ -140,25 +150,13 @@ export default function Page() {
     }
   }
 
-  /* useEffect(() => {
-    document.querySelector("video")?.click();
-  }, []); */
-
   return (
     <div className="min-h-screen bg-orange-50 dark:bg-gray-900 transition-colors duration-300">
       {/* Side Navigation - Floating with Icons */}
       <nav className="fixed left-4 top-1/2 transform -translate-y-1/2 z-40 hidden lg:block">
         <div className="bg-white/90 dark:bg-gray-800/90 backdrop-blur-sm shadow-xl rounded-2xl p-3 border border-orange-200 dark:border-gray-700">
           <ul className="space-y-3">
-            {[
-              { id: "inicio", label: "Inicio", icon: <Home className="w-5 h-5" /> },
-              { id: "beneficios", label: "Beneficios", icon: <Sparkles className="w-5 h-5" /> },
-              { id: "ingredientes", label: "Ingredientes", icon: <Component className="w-5 h-5" /> },
-              { id: "comprar", label: "Comprar", icon: <ShoppingCart className="w-5 h-5" /> },
-              { id: "galeria", label: "Galería", icon: <Camera className="w-5 h-5" /> },
-              { id: "testimonios", label: "Testimonios", icon: <MessageCircle className="w-5 h-5" /> },
-              { id: "faq", label: "FAQ", icon: <HelpCircle className="w-5 h-5" /> },
-            ].map((item) => (
+            {menuItems.map((item) => (
               <li key={item.id}>
                 <button
                   onClick={() => scrollToSection(item.id)}
@@ -194,15 +192,7 @@ export default function Page() {
       <nav className="fixed bottom-4 left-1/2 transform -translate-x-1/2 z-40 lg:hidden">
         <div className="bg-white/90 dark:bg-gray-800/90 backdrop-blur-sm shadow-xl rounded-2xl p-3 border border-orange-200 dark:border-gray-700">
           <ul className="flex space-x-2">
-            {[
-              { id: "inicio", label: "Inicio", icon: <Home className="w-5 h-5" /> },
-              { id: "beneficios", label: "Beneficios", icon: <Sparkles className="w-5 h-5" /> },
-              { id: "ingredientes", label: "Ingredientes", icon: <Component className="w-5 h-5" /> },
-              { id: "comprar", label: "Comprar", icon: <ShoppingCart className="w-5 h-5" /> },
-              { id: "galeria", label: "Galería", icon: <Camera className="w-5 h-5" /> },
-              { id: "testimonios", label: "Testimonios", icon: <MessageCircle className="w-5 h-5" /> },
-              { id: "faq", label: "FAQ", icon: <HelpCircle className="w-5 h-5" /> },
-            ].map((item) => (
+            {menuItems.map((item) => (
               <li key={item.id}>
                 <button
                   onClick={() => scrollToSection(item.id)}
