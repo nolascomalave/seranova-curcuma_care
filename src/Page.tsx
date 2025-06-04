@@ -427,7 +427,7 @@ export default function Page() {
                         <div className="text-3xl font-bold text-orange-600 dark:text-orange-500 mb-6">$3.00</div>
                     </div>
                     <Button
-                      href="https://wa.me/584123161687?text=Hola%2C%20estoy%20interesad%40%20en%20tu%20jab%C3%B3n%20C%C3%BArcuma%20Care%20por%20unidad:%20https%3A%2F%2Fm.media-amazon.com%2Fimages%2FI%2F51HiuV5JmdL._AC_UF1000%2C1000_QL80_DpWeblab_.jpg"
+                      href="https://wa.me/584123161687?text=Hola%2C%20estoy%20interesad%40%20en%20tu%20jab%C3%B3n%20C%C3%BArcuma%20Care%20por%20unidad:%20https%3A%2F%2Fraw.githubusercontent.com%2Fnolascomalave%2Fseranova-curcuma_care%2Frefs%2Fheads%2Fmain%2Fpublic%2Fimages%2Fsoap%2F6.png"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="w-full bg-orange-600 hover:bg-orange-700 dark:bg-orange-600 dark:hover:bg-orange-700 text-white py-5 rounded-full"
@@ -461,7 +461,7 @@ export default function Page() {
                         </div>
                     </div>
                     <Button
-                      href="https://wa.me/584123161687?text=Hola%2C%20estoy%20interesad%40%20en%20la%20presentaci%C3%B3n%20de%206%20unidades%20del%20jab%C3%B3n%20C%C3%BArcuma%20Care:%20https%3A%2F%2Fm.media-amazon.com%2Fimages%2FI%2F51HiuV5JmdL._AC_UF1000%2C1000_QL80_DpWeblab_.jpg"
+                      href="https://wa.me/584123161687?text=Hola%2C%20estoy%20interesad%40%20en%20la%20presentaci%C3%B3n%20de%206%20unidades%20del%20jab%C3%B3n%20C%C3%BArcuma%20Care:%20https%3A%2F%2Fraw.githubusercontent.com%2Fnolascomalave%2Fseranova-curcuma_care%2Frefs%2Fheads%2Fmain%2Fpublic%2Fimages%2Fsoap%2F8.png"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="w-full bg-orange-600 hover:bg-orange-700 dark:bg-orange-600 dark:hover:bg-orange-700 text-white py-5 rounded-full"
