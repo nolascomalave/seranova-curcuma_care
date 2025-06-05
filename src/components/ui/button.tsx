@@ -46,6 +46,8 @@ function Button({
   }) {
 
   if("isLink" in props && props.isLink === true) {
+    delete props.isLink;
+
     return (
       <a
         data-slot="a"
@@ -53,6 +55,10 @@ function Button({
         {...props}
       />
     )
+  }
+
+  if("isLink" in props) {
+    delete props.isLink;
   }
 
   return (

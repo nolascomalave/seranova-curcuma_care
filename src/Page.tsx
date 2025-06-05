@@ -284,7 +284,7 @@ export default function Page() {
                     }}
                     className="w-full h-full object-cover rounded-md shadow-lg"
                 >
-                  <source src="/curcuma-care.mp4" type="video/mp4"/>
+                  <source src="/videos/presentation.mp4" type="video/mp4"/>
                   <p>Tu navegador no soporta videos HTML5.</p>
                 </video>
                 <div className="absolute flex gap-1 justify-end top-2 right-2">
