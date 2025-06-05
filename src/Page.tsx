@@ -191,7 +191,7 @@ export default function Page() {
       {/* Mobile Navigation - Bottom */}
       <nav className="fixed bottom-4 left-1/2 transform -translate-x-1/2 z-40 lg:hidden">
         <div className="bg-white/90 dark:bg-gray-800/90 backdrop-blur-sm shadow-xl rounded-2xl p-3 border border-orange-200 dark:border-gray-700">
-          <ul className="flex space-x-2">
+          <ul className="flex gap-1">
             {menuItems.map((item) => (
               <li key={item.id}>
                 <button
@@ -232,18 +232,17 @@ export default function Page() {
             <div className="text-center lg:text-left">
               <div className="mb-8 flex justify-center items-center">
                 <div className="relative">
-                  <div className="w-96 h-96 bg-gradient-to-br from-orange-400 to-orange-600 rounded-full flex items-center justify-center shadow-2xl">
-                    <div className="w-80 h-80 bg-white rounded-full flex items-center justify-center">
+                  <div className="w-full p-6 bg-gradient-to-br from-orange-400 to-orange-600 rounded-full flex items-center justify-center shadow-2xl">
+                    <div className="w-full bg-white rounded-full flex items-center justify-center">
                       <img
                           src="/images/logo.png"
                           alt="Cúrcuma Care - Jabón Natural"
-                          width={300}
-                          height={300}
+                          width={280}
                           className="rounded-full"
                       />
                     </div>
                   </div>
-                  <div className="absolute -top-4 -right-4 bg-green-600 text-white px-4 py-2 rounded-full font-semibold">
+                  <div className="absolute -top-5 right-0 bg-green-600 text-white px-4 py-2 rounded-full font-semibold">
                     100% Natural
                   </div>
                 </div>
